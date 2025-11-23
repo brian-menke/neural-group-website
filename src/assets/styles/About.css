@@ -1,0 +1,85 @@
+/* About Page Styles */
+.about-container {
+  min-height: calc(100vh - 80px);
+  background-color: #000000;
+  padding: 80px 20px;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #00CED1;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+}
+
+.value-item {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cccccc;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.value-item::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #00CED1;
+  font-size: 1.5rem;
+}
+
+.value-item strong {
+  color: #00CED1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 60px 20px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .about-text,
+  .value-item {
+    font-size: 1rem;
+  }
+}

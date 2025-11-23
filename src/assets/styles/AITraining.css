@@ -1,0 +1,351 @@
+/* AI Training Page Styles */
+.ai-training-container {
+  min-height: calc(100vh - 80px);
+  background-color: #000000;
+  padding-top: 40px;
+}
+
+.ai-training-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.training-hero {
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 40px;
+}
+
+.training-title {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+
+.training-subtitle {
+  font-size: 1.3rem;
+  color: #00CED1;
+  font-weight: 300;
+}
+
+/* Section Styles */
+.training-section {
+  padding: 60px 20px;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #001a1a 100%);
+  border-radius: 12px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+/* Offering Grid */
+.offering-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.offering-card {
+  background-color: rgba(0, 206, 209, 0.05);
+  border: 1px solid rgba(0, 206, 209, 0.3);
+  padding: 30px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.offering-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 206, 209, 0.2);
+  border-color: #00CED1;
+  background-color: rgba(0, 206, 209, 0.08);
+}
+
+.offering-title {
+  font-size: 1.3rem;
+  color: #00CED1;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.offering-description {
+  color: #cccccc;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* Dates Container */
+.dates-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.date-card {
+  background-color: rgba(0, 206, 209, 0.05);
+  border: 1px solid rgba(0, 206, 209, 0.3);
+  padding: 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.date-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 206, 209, 0.2);
+  border-color: #00CED1;
+  background-color: rgba(0, 206, 209, 0.08);
+}
+
+.date-badge {
+  display: inline-block;
+  background-color: #00CED1;
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+}
+
+.session-title {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.session-details {
+  color: #999999;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.session-level {
+  color: #00CED1;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.sessions-note {
+  text-align: center;
+  color: #cccccc;
+  font-size: 0.95rem;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(0, 206, 209, 0.05);
+  border-left: 3px solid #00CED1;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+/* Formats Grid */
+.formats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.format-card {
+  background-color: rgba(0, 206, 209, 0.05);
+  border: 1px solid rgba(0, 206, 209, 0.3);
+  padding: 30px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.format-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 206, 209, 0.2);
+  border-color: #00CED1;
+  background-color: rgba(0, 206, 209, 0.08);
+}
+
+.format-title {
+  font-size: 1.3rem;
+  color: #00CED1;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.format-description {
+  color: #cccccc;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* Contact Form Section */
+.contact-section {
+  background: linear-gradient(135deg, #0a0a0a 0%, #001a1a 100%);
+}
+
+.form-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.training-form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #000000;
+  border: 1px solid #00CED1;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #00FFFF;
+  box-shadow: 0 0 8px rgba(0, 206, 209, 0.5);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #888888;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submit-button {
+  padding: 15px 50px;
+  background-color: #00CED1;
+  color: #000000;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.submit-button:hover {
+  background-color: #00FFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 206, 209, 0.4);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-button:disabled:hover {
+  background-color: #00CED1;
+}
+
+/* Alert Messages */
+.alert {
+  padding: 15px 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  animation: slideIn 0.3s ease-out;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .training-title {
+    font-size: 2.5rem;
+  }
+
+  .training-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .offering-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dates-container {
+    grid-template-columns: 1fr;
+  }
+
+  .formats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .training-section {
+    padding: 40px 20px;
+  }
+}
