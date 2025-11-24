@@ -90,7 +90,7 @@ function Home() {
             <div className="testimonial-card">
               <div className="testimonial-quote">"</div>
               <p className="testimonial-text">
-                Iron Gate Services transformed our outdated legacy systems into a modern, efficient platform. The team's expertise in Python and React was exactly what we needed.
+                The Neural Group transformed our outdated legacy systems into a modern, efficient platform. The team's expertise in Python and React was exactly what we needed.
               </p>
               <div className="testimonial-author">
                 <div className="author-name">Sarah Johnson</div>
