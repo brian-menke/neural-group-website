@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import '../assets/styles/Navbar.css';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,13 +15,13 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-container">
-        <Link to="/" className="navbar-logo" onClick={closeMenu}>
-           The Neural Group
+      <div className="nav-container">
+        <Link to="/" className="nav-logo" onClick={closeMenu}>
+          THE NEURAL GROUP
         </Link>
-
+        
         <div className="menu-icon" onClick={toggleMenu}>
-          <div className={isOpen ? 'hamburger open' : 'hamburger'}>
+          <div className={isOpen ? 'hamburger active' : 'hamburger'}>
             <span></span>
             <span></span>
             <span></span>
@@ -50,7 +50,12 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-link" onClick={closeMenu}>
+            <Link to="/faq" className="nav-link" onClick={closeMenu}>
+              FAQ
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/contact" className="nav-link nav-link-contact" onClick={closeMenu}>
               Contact
             </Link>
           </li>
