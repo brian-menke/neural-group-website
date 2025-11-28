@@ -15,13 +15,13 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="nav-container">
-        <Link to="/" className="nav-logo" onClick={closeMenu}>
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo" onClick={closeMenu}>
           THE NEURAL GROUP
         </Link>
         
         <div className="menu-icon" onClick={toggleMenu}>
-          <div className={isOpen ? 'hamburger active' : 'hamburger'}>
+          <div className={isOpen ? 'hamburger open' : 'hamburger'}>
             <span></span>
             <span></span>
             <span></span>
@@ -55,7 +55,7 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-link nav-link-contact" onClick={closeMenu}>
+            <Link to="/contact" className="nav-link" onClick={closeMenu}>
               Contact
             </Link>
           </li>
