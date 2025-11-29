@@ -132,7 +132,7 @@
 
 .faq-answer.open {
   max-height: 500px;
-  padding: 0 30px 25px 30px;
+  padding: 25px 30px 25px 30px;
 }
 
 .faq-answer p {
