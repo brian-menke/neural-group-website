@@ -11,7 +11,7 @@ function About() {
         description="Learn about The Neural Group's mission to help businesses harness the power of artificial intelligence. Meet our team of AI experts and discover our approach to technology consulting and AI implementation."
         keywords="about us, AI experts, technology consultants, AI consulting team, business AI specialists, Phoenix AI company, AI professionals"
         url="https://theneuralgroup.ai/about"
-        image="https://theneuralgroup.ai/og-image.jpg"
+        image="https://theneuralgroup.ai/og-image.png"
         type="website"
       />
 

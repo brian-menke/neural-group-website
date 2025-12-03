@@ -95,7 +95,7 @@ function AITraining() {
         description="Professional AI training programs teaching prompt engineering, Claude AI usage, and practical business applications. Workshops available in-person, virtual, group, and one-on-one formats. Learn to leverage AI for maximum productivity."
         keywords="AI training, Claude AI training, prompt engineering, AI workshops, business AI training, AI education, virtual AI training, AI learning, corporate training, AI certification"
         url="https://theneuralgroup.ai/ai-training"
-        image="https://theneuralgroup.ai/og-image.jpg"
+        image="https://theneuralgroup.ai/og-image.png"
         type="website"
       />
 

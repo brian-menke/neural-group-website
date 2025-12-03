@@ -80,7 +80,7 @@ function FAQ() {
         description="Get answers to common questions about The Neural Group's AI services, training programs, pricing, timelines, and implementation process. Learn how we can help your business adopt AI technology."
         keywords="AI FAQ, AI questions, AI training questions, AI consulting FAQ, AI services information, business AI help, AI training cost, AI implementation"
         url="https://theneuralgroup.ai/faq"
-        image="https://theneuralgroup.ai/og-image.jpg"
+        image="https://theneuralgroup.ai/og-image.png"
         type="website"
       />
 

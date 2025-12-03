@@ -93,7 +93,7 @@ function Contact() {
         description="Ready to transform your business with AI? Contact The Neural Group for a consultation, schedule an AI assessment, or request training information. We respond within 24 hours to all inquiries."
         keywords="contact AI consultant, AI consultation, schedule AI assessment, AI training inquiry, business AI contact, Phoenix AI services contact, get in touch"
         url="https://theneuralgroup.ai/contact"
-        image="https://theneuralgroup.ai/og-image.jpg"
+        image="https://theneuralgroup.ai/og-image.png"
         type="website"
       />
 

@@ -42,7 +42,7 @@ function Services() {
         description="Comprehensive AI services including training workshops, technology consulting, custom business solutions, AI assessment, system integration, and ongoing support. Tailored solutions for businesses of all sizes."
         keywords="AI services, AI training, technology consulting, business solutions, AI assessment, system integration, AI support, custom AI solutions, enterprise AI, AI workshops"
         url="https://theneuralgroup.ai/services"
-        image="https://theneuralgroup.ai/og-image.jpg"
+        image="https://theneuralgroup.ai/og-image.png"
         type="website"
       />
 

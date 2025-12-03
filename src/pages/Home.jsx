@@ -12,7 +12,7 @@ function Home() {
         description="Transform your operations with cutting-edge AI technology. The Neural Group offers AI training, consulting, custom solutions, and system integration to help businesses leverage AI for maximum productivity and growth."
         keywords="AI consulting, AI training, artificial intelligence, business AI solutions, AI integration, Claude AI training, prompt engineering, AI assessment, technology consulting, Phoenix AI services, machine learning, AI implementation"
         url="https://theneuralgroup.ai"
-        image="https://theneuralgroup.ai/og-image.jpg"
+        image="https://theneuralgroup.ai/og-image.png"
         type="website"
       />
 
