@@ -1,5 +1,6 @@
 import API_BASE_URL from '../config';
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 import '../assets/styles/Contact.css';
 
 function Contact() {
@@ -85,157 +86,169 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
-      <div className="contact-content">
-        {/* Hero Section */}
-        <section className="contact-hero">
-          <h1 className="contact-title">CONTACT US</h1>
-          <p className="contact-subtitle">Get in Touch with The Neural Group</p>
-        </section>
+    <>
+      {/* SEO Component - Optimizes this page for search engines */}
+      <SEO 
+        title="Contact Us - Get Started with AI Solutions | The Neural Group"
+        description="Ready to transform your business with AI? Contact The Neural Group for a consultation, schedule an AI assessment, or request training information. We respond within 24 hours to all inquiries."
+        keywords="contact AI consultant, AI consultation, schedule AI assessment, AI training inquiry, business AI contact, Phoenix AI services contact, get in touch"
+        url="https://theneuralgroup.ai/contact"
+        image="https://theneuralgroup.ai/og-image.jpg"
+        type="website"
+      />
 
-        {/* Why Choose Section - MOVED TO TOP */}
-        <section className="additional-info">
-          <h2 className="section-heading">Why Choose The Neural Group?</h2>
-          <div className="benefits-grid">
-            <div className="benefit-card">
-              <h3>🚀 Fast Response Time</h3>
-              <p>We typically respond to inquiries within 24 hours</p>
-            </div>
-            <div className="benefit-card">
-              <h3>💼 Professional Service</h3>
-              <p>Expert solutions tailored to your business needs</p>
-            </div>
-            <div className="benefit-card">
-              <h3>🎯 Custom Solutions</h3>
-              <p>We create technology solutions that fit your specific requirements</p>
-            </div>
-            <div className="benefit-card">
-              <h3>🤝 Ongoing Support</h3>
-              <p>We're here to help long after your project launches</p>
-            </div>
-          </div>
-        </section>
+      <div className="contact-container">
+        <div className="contact-content">
+          {/* Hero Section */}
+          <section className="contact-hero">
+            <h1 className="contact-title">CONTACT US</h1>
+            <p className="contact-subtitle">Get in Touch with The Neural Group</p>
+          </section>
 
-        {/* Contact Form Section - STAYS IN MIDDLE */}
-        <section className="contact-form-section">
-          <h2 className="section-heading">Send Us a Message</h2>
-          <p className="form-intro">
-            Have a question or want to learn more about our services? Fill out the form below and we'll get back to you promptly.
-          </p>
-
-          {submitStatus.success && (
-            <div className="alert alert-success">
-              ✅ {submitStatus.message}
+          {/* Why Choose Section - MOVED TO TOP */}
+          <section className="additional-info">
+            <h2 className="section-heading">Why Choose The Neural Group?</h2>
+            <div className="benefits-grid">
+              <div className="benefit-card">
+                <h3>🚀 Fast Response Time</h3>
+                <p>We typically respond to inquiries within 24 hours</p>
+              </div>
+              <div className="benefit-card">
+                <h3>💼 Professional Service</h3>
+                <p>Expert solutions tailored to your business needs</p>
+              </div>
+              <div className="benefit-card">
+                <h3>🎯 Custom Solutions</h3>
+                <p>We create technology solutions that fit your specific requirements</p>
+              </div>
+              <div className="benefit-card">
+                <h3>🤝 Ongoing Support</h3>
+                <p>We're here to help long after your project launches</p>
+              </div>
             </div>
-          )}
+          </section>
 
-          {submitStatus.error && (
-            <div className="alert alert-error">
-              ❌ {submitStatus.message}
-            </div>
-          )}
+          {/* Contact Form Section - STAYS IN MIDDLE */}
+          <section className="contact-form-section">
+            <h2 className="section-heading">Send Us a Message</h2>
+            <p className="form-intro">
+              Have a question or want to learn more about our services? Fill out the form below and we'll get back to you promptly.
+            </p>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-row">
+            {submitStatus.success && (
+              <div className="alert alert-success">
+                ✅ {submitStatus.message}
+              </div>
+            )}
+
+            {submitStatus.error && (
+              <div className="alert alert-error">
+                ❌ {submitStatus.message}
+              </div>
+            )}
+
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <div className="form-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name*"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="form-input"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email*"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="form-input"
+                />
+              </div>
+
+              <div className="form-row">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="form-input"
+                />
+                <select
+                  name="primaryInterest"
+                  value={formData.primaryInterest}
+                  onChange={handleChange}
+                  required
+                  className="form-select"
+                >
+                  <option value="">Primary Interest*</option>
+                  <option value="AI Training">AI Training</option>
+                  <option value="AI Assessment">AI Assessment</option>
+                  <option value="Technology Consulting">Technology Consulting</option>
+                  <option value="Business Solutions">Business Solutions</option>
+                  <option value="System Integration">System Integration</option>
+                  <option value="Strategic Planning">Strategic Planning</option>
+                  <option value="Support & Maintenance">Support & Maintenance</option>
+                </select>
+              </div>
+
               <input
                 type="text"
-                name="name"
-                placeholder="Your Name*"
-                value={formData.name}
+                name="subject"
+                placeholder="Subject*"
+                value={formData.subject}
                 onChange={handleChange}
                 required
                 className="form-input"
               />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email*"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="form-input"
-              />
-            </div>
 
-            <div className="form-row">
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                value={formData.phone}
-                onChange={handleChange}
-                className="form-input"
-              />
-              <select
-                name="primaryInterest"
-                value={formData.primaryInterest}
+              <textarea
+                name="message"
+                placeholder="Your Message*"
+                value={formData.message}
                 onChange={handleChange}
                 required
-                className="form-select"
+                className="form-textarea"
+                rows="6"
+              />
+
+              <button 
+                type="submit" 
+                className="submit-button"
+                disabled={submitStatus.loading}
               >
-                <option value="">Primary Interest*</option>
-                <option value="AI Training">AI Training</option>
-                <option value="AI Assessment">AI Assessment</option>
-                <option value="Technology Consulting">Technology Consulting</option>
-                <option value="Business Solutions">Business Solutions</option>
-                <option value="System Integration">System Integration</option>
-                <option value="Strategic Planning">Strategic Planning</option>
-                <option value="Support & Maintenance">Support & Maintenance</option>
-              </select>
-            </div>
+                {submitStatus.loading ? 'Sending...' : 'Send Message'}
+              </button>
+            </form>
+          </section>
 
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject*"
-              value={formData.subject}
-              onChange={handleChange}
-              required
-              className="form-input"
-            />
-
-            <textarea
-              name="message"
-              placeholder="Your Message*"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className="form-textarea"
-              rows="6"
-            />
-
-            <button 
-              type="submit" 
-              className="submit-button"
-              disabled={submitStatus.loading}
-            >
-              {submitStatus.loading ? 'Sending...' : 'Send Message'}
-            </button>
-          </form>
-        </section>
-
-        {/* Contact Info Section - MOVED TO BOTTOM */}
-        <section className="contact-info-section">
-          <div className="info-grid">
-            <div className="info-card">
-              <div className="info-icon">📧</div>
-              <h3 className="info-title">Email</h3>
-              <p className="info-detail">info@theneuralgroup.ai</p>
+          {/* Contact Info Section - MOVED TO BOTTOM */}
+          <section className="contact-info-section">
+            <div className="info-grid">
+              <div className="info-card">
+                <div className="info-icon">📧</div>
+                <h3 className="info-title">Email</h3>
+                <p className="info-detail">info@theneuralgroup.ai</p>
+              </div>
+              <div className="info-card">
+                <div className="info-icon">📍</div>
+                <h3 className="info-title">Location</h3>
+                <p className="info-detail">Phoenix, Arizona</p>
+              </div>
+              <div className="info-card">
+                <div className="info-icon">⏰</div>
+                <h3 className="info-title">Business Hours</h3>
+                <p className="info-detail">Monday - Friday<br/>9:00 AM - 5:00 PM MST</p>
+              </div>
             </div>
-            <div className="info-card">
-              <div className="info-icon">📍</div>
-              <h3 className="info-title">Location</h3>
-              <p className="info-detail">Phoenix, Arizona</p>
-            </div>
-            <div className="info-card">
-              <div className="info-icon">⏰</div>
-              <h3 className="info-title">Business Hours</h3>
-              <p className="info-detail">Monday - Friday<br/>9:00 AM - 5:00 PM MST</p>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

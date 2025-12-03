@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import '../assets/styles/Services.css';
 
 function Services() {
@@ -34,31 +35,43 @@ function Services() {
   ];
 
   return (
-    <div className="services-container">
-      <div className="services-content">
-        <h1 className="services-title">Our Services</h1>
-        <p className="services-intro">
-          We offer comprehensive technology services designed to meet the unique needs of your business.
-        </p>
+    <>
+      {/* SEO Component - Optimizes this page for search engines */}
+      <SEO 
+        title="AI Services - Training, Consulting & Custom Solutions | The Neural Group"
+        description="Comprehensive AI services including training workshops, technology consulting, custom business solutions, AI assessment, system integration, and ongoing support. Tailored solutions for businesses of all sizes."
+        keywords="AI services, AI training, technology consulting, business solutions, AI assessment, system integration, AI support, custom AI solutions, enterprise AI, AI workshops"
+        url="https://theneuralgroup.ai/services"
+        image="https://theneuralgroup.ai/og-image.jpg"
+        type="website"
+      />
 
-        <div className="services-grid">
-          {services.map((service, index) => (
-            <div key={index} className="service-card">
-              <h3 className="service-title">{service.title}</h3>
-              <p className="service-description">{service.description}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="cta-section">
-          <h2 className="cta-title">Ready to Get Started?</h2>
-          <p className="cta-text">
-            Contact us today to discuss how we can help your business succeed.
+      <div className="services-container">
+        <div className="services-content">
+          <h1 className="services-title">Our Services</h1>
+          <p className="services-intro">
+            We offer comprehensive technology services designed to meet the unique needs of your business.
           </p>
-          <a href="/contact" className="cta-button">Contact Us</a>
+
+          <div className="services-grid">
+            {services.map((service, index) => (
+              <div key={index} className="service-card">
+                <h3 className="service-title">{service.title}</h3>
+                <p className="service-description">{service.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="cta-section">
+            <h2 className="cta-title">Ready to Get Started?</h2>
+            <p className="cta-text">
+              Contact us today to discuss how we can help your business succeed.
+            </p>
+            <a href="/contact" className="cta-button">Contact Us</a>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

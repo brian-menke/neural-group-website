@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 import '../assets/styles/FAQ.css';
 
 function FAQ() {
@@ -72,60 +73,72 @@ function FAQ() {
   };
 
   return (
-    <div className="faq-container">
-      <div className="faq-content">
-        {/* Hero Section */}
-        <section className="faq-hero">
-          <h1 className="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
-          <p className="faq-subtitle">Everything You Need to Know About The Neural Group</p>
-        </section>
+    <>
+      {/* SEO Component */}
+      <SEO 
+        title="Frequently Asked Questions - AI Services & Training | The Neural Group"
+        description="Get answers to common questions about The Neural Group's AI services, training programs, pricing, timelines, and implementation process. Learn how we can help your business adopt AI technology."
+        keywords="AI FAQ, AI questions, AI training questions, AI consulting FAQ, AI services information, business AI help, AI training cost, AI implementation"
+        url="https://theneuralgroup.ai/faq"
+        image="https://theneuralgroup.ai/og-image.jpg"
+        type="website"
+      />
 
-        {/* Introduction */}
-        <section className="faq-intro-section">
-          <p className="faq-intro">
-            Have questions about our AI services, training programs, or consulting? 
-            We've compiled answers to the most common questions we receive. 
-            If you don't find what you're looking for, feel free to contact us directly!
-          </p>
-        </section>
+      <div className="faq-container">
+        <div className="faq-content">
+          {/* Hero Section */}
+          <section className="faq-hero">
+            <h1 className="faq-title">Frequently Asked Questions</h1>
+            <p className="faq-subtitle">Everything You Need to Know About The Neural Group</p>
+          </section>
 
-        {/* FAQ List */}
-        <section className="faq-list-section">
-          <div className="faq-list">
-            {faqs.map((faq, index) => (
-              <div 
-                key={index} 
-                className={`faq-item ${openIndex === index ? 'active' : ''}`}
-              >
-                <button 
-                  className="faq-question"
-                  onClick={() => toggleFAQ(index)}
-                  aria-expanded={openIndex === index}
+          {/* Introduction */}
+          <section className="faq-intro-section">
+            <p className="faq-intro">
+              Have questions about our AI services, training programs, or consulting? 
+              We've compiled answers to the most common questions we receive. 
+              If you don't find what you're looking for, feel free to contact us directly!
+            </p>
+          </section>
+
+          {/* FAQ List */}
+          <section className="faq-list-section">
+            <div className="faq-list">
+              {faqs.map((faq, index) => (
+                <div 
+                  key={index} 
+                  className={`faq-item ${openIndex === index ? 'active' : ''}`}
                 >
-                  <span className="question-text">{faq.question}</span>
-                  <span className="faq-icon">{openIndex === index ? '−' : '+'}</span>
-                </button>
-                <div className={`faq-answer ${openIndex === index ? 'open' : ''}`}>
-                  <p>{faq.answer}</p>
+                  <button 
+                    className="faq-question"
+                    onClick={() => toggleFAQ(index)}
+                    aria-expanded={openIndex === index}
+                  >
+                    <span className="question-text">{faq.question}</span>
+                    <span className="faq-icon">{openIndex === index ? '−' : '+'}</span>
+                  </button>
+                  <div className={`faq-answer ${openIndex === index ? 'open' : ''}`}>
+                    <p>{faq.answer}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
 
-        {/* CTA Section */}
-        <section className="faq-cta-section">
-          <h2 className="cta-heading">Still Have Questions?</h2>
-          <p className="cta-text">
-            We're here to help! Contact us directly and we'll be happy to answer any questions you have about our services.
-          </p>
-          <div className="cta-buttons">
-            <a href="/contact" className="cta-button primary">Contact Us</a>
-            <a href="/ai-training" className="cta-button secondary">Request Training Info</a>
-          </div>
-        </section>
+          {/* CTA Section */}
+          <section className="faq-cta-section">
+            <h2 className="cta-heading">Still Have Questions?</h2>
+            <p className="cta-text">
+              We're here to help! Contact us directly and we'll be happy to answer any questions you have about our services.
+            </p>
+            <div className="cta-buttons">
+              <a href="/contact" className="cta-button primary">Contact Us</a>
+              <a href="/ai-training" className="cta-button secondary">Request Training Info</a>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
